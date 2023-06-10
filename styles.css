@@ -562,10 +562,12 @@ aside img:hover {
 }
 
 .btn {
+    width: 150px;
     border: 1px solid var(--green-color1);
     padding: 10px;
     background-color: var(--green-color1);
     color: var(--black-color2);
+    font-size: medium;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -820,26 +822,37 @@ footer .container__footer--bottom a {
     .main__container-left {
         margin: auto;
     }
-
+    .gallery__figure {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .image {
+        max-width: 150px;
+        max-height: 100px;
+    }
+    figcaption {
+        max-width: 140px;
+    }
+    
     aside {
         grid-column: 1 / -1;
         grid-row: 2;
     }
     .gap__aside {
-        flex-direction: row;
-    }
-    aside div {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 10px;
         justify-content: center;
     }
-    aside figure {
-        width: 45%;
+    .gap__aside figure {
+        max-width: 140px;
     }
-    aside figure img {
+    .gap__aside img {
         width: 100%;
         max-width: 250px;
+        height: 100px;
     }
 
     .contact__form {
